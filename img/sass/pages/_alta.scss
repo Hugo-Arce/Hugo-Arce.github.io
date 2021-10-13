@@ -1,0 +1,93 @@
+.formulario-1 {
+    width: 700px;
+    background-color: rgba($color: #1695A3, $alpha: 0.5);
+    padding: 80px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: #000;
+    box-shadow: 7px 13px 37px #000;
+
+}
+.formulario-1:focus-within {
+    background-color: #1695A3;
+    color: #fff;
+}
+
+.datos_alta {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+
+.formulario-alta{
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+.formulario-alta select{
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+.completar {
+    display: block;
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    font-size: 17px;
+}
+
+textarea {
+    display: block;
+    margin: 0px auto;
+    padding: 35px;
+    width: 100%;
+    resize: vertical;
+    color: #000;
+    font-size: 17px;
+}
+
+.formulario-envio {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+#botones-formulario {
+    text-align: center;   
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #000;
+    color: #1695A3;
+    font-size: medium;
+    border-radius: 4px;
+    border: 1px solid #070819;
+    margin: 15px;
+
+}
+button[type="submit"]:hover {
+    background-color: #1695A3;
+    color: #000;
+    
+}
+button[type="reset"] {
+    padding: 10px;
+    background-color: #000;
+    color: #1695A3;
+    font-size: medium;
+    border-radius: 4px;
+    border: 1px solid #070819;
+    margin: 15px;
+}
+
+button[type="reset"]:hover {
+    background-color: #1695A3;
+    color: #000;
+    
+}

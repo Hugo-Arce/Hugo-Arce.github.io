@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="shortcut icon" href="img/productos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>   
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <a href="index.html"><img class="logo-bar" src="/img/productos/logo-1.png" alt="logo"></a>
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container">
+                <img src="/img/productos/cart.png" alt="carrito">
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="manu-toggle__pan-arriba"></span>
+                    <span class="manu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="alta-producto.php" method="get" autocomplete="off">
+
+            <fieldset class="formulario-1">
+                <div class="datos_alta">Alta de Producto</div>
+                
+                <div class="formulario-alta">
+                    <label for="nombre">Nombre:</label>
+                    <input class="completar" type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="precio">Precio:</label>
+                    <input class="completar" type="number" id="precio" name="precio" placeholder="precio" required>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="stock">Stock:</label>
+                    <input class="completar" type="number" id="stock" name="stock" max="200" required>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca" required>
+                        <option value="">Seleccioná una opcion</option>
+                        <optgroup label="Notebook">
+                            <option value="2">Lenovo</option>
+                            <option value="3">Samsung</option>
+                            <option value="4">HP</option>
+                            <option value="5">MSI</option>
+                            <option value="6">Xiaomi</option>
+                        </optgroup>
+                        <optgroup label="Celulares">
+                            <option value="7">Apple</option>
+                            <option value="8">Samsung</option>
+                            <option value="9">Sony-Xperia</option>
+                            <option value="10">LG</option>
+                            <option value="11">Motorola</option>
+                            <option value="12">Xiaomi</option>
+                        </optgroup>
+                        <optgroup label="Tablet">
+                            <option value="13">Apple</option>
+                            <option value="14">Samsung</option>
+                            <option value="15">Lenovo</option>
+                            <option value="16">LG</option>
+                            <option value="17">Xiaomi</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccioná una categoría</option>
+                            <option value="1">Notebook</option>
+                            <option value="2">Celulares</option>
+                            <option value="3">Tablet</option>
+                            <option value="4">Otros</option>    
+                    </select>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="Imagen">Imagen:</label>
+                    <input type="file" id="Imagen" name="Imagen" required>
+                </div>
+
+                <div class="formulario-alta">
+                    <label for="detalle">Detalle:</label>
+                    <textarea id="detalle" name="detalle" placeholder="Detalles del producto"></textarea>
+                </div>
+
+                <div class="formulario-envio">
+                    <input type="checkbox" id="envio" name="envio" value="si">
+                    <label for="envio">Envío sin cargo</label>
+                </div>
+
+                <div id="botones-formulario">
+                    <button type="submit">Dar de alta</button>
+                    <button type="reset">Restablecer</button>
+                </div>
+
+            </fieldset>
+
+        </form>
+            
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+        
+            <div class="social">
+                <p>Seguinos en las redes</p>
+                <a href="https://www.instagram.com/" class="social-instagram" target="_blank"><img src="/img/productos/instagram_logo_icon.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/" class="social-facebook" target="_blank"><img src="img/productos/facebook_icon.png" alt="facebook"></a>
+                <a href="https://twitter.com/" class="social-twitter" target="_blank"><img src="img/productos/applications_media_social_twitter_icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/" class="social-youtube" target="_blank"><img src="img/productos/youtube_videos_icon.png" alt="youtube"></a>
+            </div>
+        
+            <div class="copyright">
+                <img class="icono" src="img/productos/icono-1.png" alt="icono">
+                <p>Copyright © 2021 Connecticus. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

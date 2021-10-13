@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/productos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>   
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <a href="index.html"><img class="logo-bar" src="/img/productos/logo-1.png" alt="logo"></a>
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container">
+                <img src="/img/productos/cart.png" alt="carrito">
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="manu-toggle__pan-arriba"></span>
+                    <span class="manu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img class="portada-logo" src="img/productos/portada-logo1.png" alt="fondo">
+        
+
+        <form action="contacto.php" method="get" autocomplete="off">
+
+        <fieldset class="datos1">
+            <legend class="datos">Datos Personales</legend>
+            
+            <div class="datos2">
+                <label for="nombre">Nombre:*</label>
+                <input class="completar" type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="datos2">
+                <label for="apellido">Apellido:*</label>
+                <input class="completar" type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <div class="datos2">
+                <label for="mail">Dirección de correo electrónico:*</label>
+                <input class="completar" type="email" id="mail" name="mail" placeholder="Ej: mail@gmail.com" required>
+            </div>
+
+            <div class="datos2">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario"></textarea>
+            </div>
+
+            <div class="datos3">
+                <input type="checkbox" name="condiciones" id="condiciones" required>
+                <label for="condiciones">Acepto las condiciones</label>
+            </div>
+            <div class="datos3">
+                <input type="checkbox" name="novedades" id="novedades" checked>
+                <label for="novedades">Deseo recibir novedades</label>
+            </div>
+
+            <div id="boton-contacto">
+                <button type="submit">Enviar </button>
+            </div>
+
+        </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+
+        <div class="contenedor-footer">
+        
+            <div class="social">
+                <p>Seguinos en las redes</p>
+                <a href="https://www.instagram.com/" class="social-instagram" target="_blank"><img src="/img/productos/instagram_logo_icon.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/" class="social-facebook" target="_blank"><img src="img/productos/facebook_icon.png" alt="facebook"></a>
+                <a href="https://twitter.com/" class="social-twitter" target="_blank"><img src="img/productos/applications_media_social_twitter_icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/" class="social-youtube" target="_blank"><img src="img/productos/youtube_videos_icon.png" alt="youtube"></a>
+            </div>
+        
+            <div class="copyright">
+                <img class="icono" src="img/productos/icono-1.png" alt="icono">
+                <p>Copyright © 2021 Connecticus. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

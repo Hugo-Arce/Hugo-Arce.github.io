@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *,
 *::after,
 *::before {
@@ -9,10 +9,32 @@
 
 body {
   box-sizing: border-box;
+  /*background-color: #000;*/
 }
 
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*
 body {
-  font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}*/
+.u-text-align-center {
+  text-align: center;
+}
+
+.u-text-align-justify {
+  text-align: justify;
+}
+
+.u-text-align-left {
+  text-align: left;
+}
+
+.u-text-align-right {
+  text-align: right;
 }
 
 .card {
@@ -63,34 +85,49 @@ body {
   padding-top: 4em;
 }
 .card:nth-child(10n+1) .card__content {
-  background-image: linear-gradient(to top, #b429f9, #26c5f3);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+2) .card__content {
-  background-image: linear-gradient(to top, #af1239, #cce269);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+3) .card__content {
-  background-image: linear-gradient(to top, #0b3866, #3ddab2);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+4) .card__content {
-  background-image: linear-gradient(to top, #f40752, #7c65a9);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+5) .card__content {
-  background-image: linear-gradient(to top, #1c3b41, #69d449);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+6) .card__content {
-  background-image: linear-gradient(to top, #0a5df8, #ed2d53);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+7) .card__content {
-  background-image: linear-gradient(to top, #661069, #30d26e);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+8) .card__content {
-  background-image: linear-gradient(to top, #702b19, #cec360);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+9) .card__content {
-  background-image: linear-gradient(to top, #034a66, #ced11a);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 .card:nth-child(10n+10) .card__content {
-  background-image: linear-gradient(to top, #ec458d, #474ed7);
+  background-image: linear-gradient(to top, #173161, #26c5f3);
+}
+.card:nth-child(10n+11) .card__content {
+  background-image: linear-gradient(to top, #173161, #26c5f3);
+}
+.card:nth-child(10n+12) .card__content {
+  background-image: linear-gradient(to top, #173161, #26c5f3);
+}
+.card:nth-child(10n+13) .card__content {
+  background-image: linear-gradient(to top, #173161, #26c5f3);
+}
+.card:nth-child(10n+14) .card__content {
+  background-image: linear-gradient(to top, #173161, #26c5f3);
+}
+.card:nth-child(10n+15) .card__content {
+  background-image: linear-gradient(to top, #173161, #26c5f3);
 }
 @media (min-width: 1024px) {
   .card {
@@ -145,7 +182,8 @@ body {
             NAV BAR
 ******************************/
 .nav-bar {
-  background-color: mediumturquoise;
+  background-color: #1695A3;
+  padding: 20px;
 }
 
 .nav-bar__nav-list {
@@ -156,58 +194,96 @@ body {
 
 .nav-bar__nav-item {
   text-align: center;
-  background-color: pink;
+  background-color: #000;
 }
 
 .nav-bar__nav-link {
-  display: block;
-  background-color: purple;
+  width: 10%;
+  background-color: #000;
   color: #fff;
-  padding: 1em 2em;
+  padding: 1em 4em;
+  border: 1px solid #000;
   text-decoration: none;
+}
+
+.nav-bar__nav-link:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /******************************
             SEARCH BAR
 ******************************/
 .search-bar {
-  background-color: olivedrab;
+  background-color: #1695A3;
   display: flex;
   justify-content: space-between;
 }
 
 .search-bar__logo-container,
 .search-bar__form-container {
-  padding: 1em;
+  padding: 0.5em;
+}
+
+.logo-bar {
+  height: 100%;
+  width: 100%;
 }
 
 .search-bar__logo-container {
-  background-color: yellow;
+  background-color: #1695A3;
+  text-align: center;
+  background-size: contain;
+}
+
+.search-bar__logo-container img {
+  margin: auto;
+  width: 100%;
 }
 
 .search-bar__form-container {
-  background-color: gold;
-  flex-basis: 100%;
+  background-color: #1695A3;
+  flex-basis: 90%;
   display: flex;
   justify-content: center;
+  width: 50%;
 }
 
 .search-bar__form-label {
-  background-color: greenyellow;
+  background-color: red;
 }
 
 .search-bar__form-search {
-  background-color: deeppink;
+  background-color: #fff;
   width: 70%;
+  height: 40%;
+  margin-top: 40px;
+  border-radius: 8px;
+  border: solid;
 }
 
 .search-bar__form-submit {
-  background-color: darkslategray;
+  background-color: #000;
+  color: #1695A3;
+  font-size: 1em;
+  height: 40%;
+  width: 20%;
+  margin-top: 40px;
+  border-radius: 8px;
+  border: solid;
+}
+
+.search-bar__form-submit:hover {
+  background-color: #fff;
+  color: #1695A3;
 }
 
 .search-bar__carrito-container {
   flex: 0 0 3em;
-  background-color: goldenrod;
+  background-color: transparent;
+  align-self: center;
+  background-size: contain;
+  margin-right: 55px;
 }
 
 /*******************************
@@ -269,10 +345,82 @@ body {
   .nav-bar__nav-list {
     flex-direction: column;
   }
+
+  .logo-bar {
+    display: block;
+  }
 }
+/******************************
+            footer
+******************************/
+.contenedor-footer {
+  width: 100%;
+  background: #1695A3;
+  margin-top: 50px;
+}
+
+.copyright {
+  font-size: 20px;
+}
+
+.copyright img {
+  margin-left: 10px;
+}
+
+.social {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.icono {
+  width: 5%;
+}
+
 .section-cards {
   background-color: #f1f2f3;
-  padding: 1em;
+  padding: 3em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 20px;
+}
+
+.remera-logo {
+  width: 100%;
+  margin: 40px auto;
+  background-color: #8ACAD1;
+  color: #000;
+  padding: 15px;
+}
+
+.remera {
+  float: left;
+  margin-right: 15px;
+  width: 40%;
+}
+
+.promo {
+  margin: 200px 50px;
+}
+
+.promo p {
+  text-align: center;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.precio {
+  font-size: 30px;
+  background-color: #000;
+  text-align: center;
 }
 
 .cards-container {
@@ -280,10 +428,253 @@ body {
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
+  margin: 20px;
 }
 
 @media (min-width: 1200px) {
   .cards-container {
     gap: 2em;
   }
+}
+.portada-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.datos1 {
+  width: 700px;
+  background-color: rgba(22, 149, 163, 0.5);
+  padding: 80px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  color: #000;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.datos1:focus-within {
+  background-color: #1695A3;
+  color: #fff;
+}
+
+.completar {
+  display: block;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  font-size: 17px;
+}
+
+.datos {
+  font-size: 25px;
+  text-align: center;
+  background-color: #000;
+  color: #1695A3;
+  border: solid 3px #1695A3;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.datos2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+textarea {
+  display: block;
+  margin: 0px auto;
+  padding: 35px;
+  width: 100%;
+  resize: vertical;
+  color: #000;
+  font-size: 17px;
+}
+
+.datos3 {
+  font-size: 20px;
+}
+
+#boton-contacto {
+  text-align: center;
+  font-size: 10px;
+}
+
+button[type=submit] {
+  padding: 10px;
+  background-color: #000;
+  color: #1695A3;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid #070819;
+  margin: 15px;
+  text-align: center;
+}
+
+button[type=submit]:hover {
+  background-color: #1695A3;
+  color: #000;
+}
+
+.formulario-1 {
+  width: 700px;
+  background-color: rgba(22, 149, 163, 0.5);
+  padding: 80px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  color: #000;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.formulario-1:focus-within {
+  background-color: #1695A3;
+  color: #fff;
+}
+
+.datos_alta {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.formulario-alta {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.formulario-alta select {
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+.completar {
+  display: block;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  font-size: 17px;
+}
+
+textarea {
+  display: block;
+  margin: 0px auto;
+  padding: 35px;
+  width: 100%;
+  resize: vertical;
+  color: #000;
+  font-size: 17px;
+}
+
+.formulario-envio {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+#botones-formulario {
+  text-align: center;
+}
+
+button[type=submit] {
+  padding: 10px;
+  background-color: #000;
+  color: #1695A3;
+  font-size: medium;
+  border-radius: 4px;
+  border: 1px solid #070819;
+  margin: 15px;
+}
+
+button[type=submit]:hover {
+  background-color: #1695A3;
+  color: #000;
+}
+
+button[type=reset] {
+  padding: 10px;
+  background-color: #000;
+  color: #1695A3;
+  font-size: medium;
+  border-radius: 4px;
+  border: 1px solid #070819;
+  margin: 15px;
+}
+
+button[type=reset]:hover {
+  background-color: #1695A3;
+  color: #000;
+}
+
+.titulo1 {
+  text-align: center;
+  text-shadow: 3px -4px 2px #969696;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.fotos-nosotros {
+  width: 100%;
+  margin: 40px auto;
+  background-color: #8ACAD1;
+  color: #000;
+  padding: 15px;
+}
+
+.fotos-nosotros img.izquierda {
+  float: left;
+  margin-right: 15px;
+  width: 60%;
+}
+
+.fotos-nosotros img.derecha {
+  float: right;
+  margin-left: 15px;
+  width: 40%;
+}
+
+.fotos-nosotros img.izquierda2 {
+  float: left;
+  margin-right: 15px;
+  width: 40%;
+}
+
+.info-nosotros {
+  margin: 90px 50px;
+}
+
+.info-nosotros p {
+  font-size: 20px;
+}
+
+.horarios-nosotros {
+  margin: 90px 50px;
+}
+
+.horarios-nosotros p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.sucursal-nosotros {
+  margin-top: 200px;
+}
+
+.sucursal-nosotros p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.reset {
+  clear: both;
 }
